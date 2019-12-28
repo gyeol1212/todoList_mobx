@@ -44,7 +44,7 @@ class Section extends Component<IProps> {
             <Todo
               content={todo}
               key={key}
-              hoverItem={store.hoverItem}
+              setTargetItem={store.setTargetItem}
               targetItemIndex={store.targetItemIndex}
               index={key}
               storeName={`${title}Store`}

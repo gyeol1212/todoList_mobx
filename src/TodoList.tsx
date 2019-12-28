@@ -17,6 +17,7 @@ class TodoList extends Component<IProps> {
   moveTargetFromSourceToDestination = (s: Stores, d: Stores) => {
     if (this.props[s] && this.props[d]) {
       const target = this.props[s]!.deleteItem();
+      console.log(target);
       target && this.props[d]!.addTodo(target);
     }
   };

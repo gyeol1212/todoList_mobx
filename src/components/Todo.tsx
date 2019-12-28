@@ -6,7 +6,7 @@ import Buttons from "./Buttons";
 
 interface IProps {
   content: string;
-  hoverItem: (targetItemIndex: number | undefined) => void;
+  setTargetItem: (targetItemIndex: number | undefined) => void;
   targetItemIndex: number | undefined;
   index: number;
   storeName: string;
@@ -16,7 +16,7 @@ interface IProps {
 
 const Todo: React.FC<IProps> = ({
   content,
-  hoverItem,
+  setTargetItem,
   targetItemIndex,
   index,
   storeName,
@@ -29,8 +29,8 @@ const Todo: React.FC<IProps> = ({
       p={2}
       marginY={3}
       fontSize={18}
-      onMouseOver={() => hoverItem(index)}
-      onMouseLeave={() => hoverItem(undefined)}
+      onMouseOver={() => setTargetItem(index)}
+      onMouseLeave={() => setTargetItem(undefined)}
     >
       {index !== targetItemIndex ? (
         content

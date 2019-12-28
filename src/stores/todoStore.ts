@@ -38,15 +38,15 @@ class TodoList {
   };
 
   @action
+  setTargetItem = (targetItemIndex?: number) => {
+    this.targetItemIndex = targetItemIndex;
+  };
+
+  @action
   deleteItem = () => {
     if (this.targetItemIndex !== undefined) {
       return this.todos.splice(this.targetItemIndex, 1)[0];
     }
-  };
-
-  @action
-  hoverItem = (targetItemIndex: number | undefined) => {
-    this.targetItemIndex = targetItemIndex;
   };
 }
 
