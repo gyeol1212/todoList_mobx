@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  font-size: 2rem;
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.section {
+  border: 1px solid black;
+}
+
+.input {
+  margin: 1rem;
+}
+
+.todo {
+  background-color: #00000005;
+  box-shadow: #e0e0e0 1px 2px 5px 0px;
+  border-radius: 10px;
+  color: #212121;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .todo:hover {
+  background-color: #00000070;
+  color: #00000000;
+} */
+
+.title {
+  padding: 0;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  box-shadow: none;
+  text-decoration: none;
+  border-radius: 5px;
+}
